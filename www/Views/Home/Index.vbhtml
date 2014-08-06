@@ -23,7 +23,7 @@ End Code
     jQuery(document).ready(function () {
         jQuery("#adder").submit(function () {
             var sVal = jQuery("#number1").val();
-            if (sVal === "") jQuery("#number1").val(20);
+            if (sVal < 1) jQuery("#number1").val(20);
             // let it do the default action (don't return false)
         });
     });
